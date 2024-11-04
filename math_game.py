@@ -1,5 +1,4 @@
-from colorama import Fore, Back,Style
-import getpass
+from colorama import Fore,Style
 import os
 import time
 
@@ -71,7 +70,9 @@ def winner(x_win,y_win,starting_x,starting_y):
             print(Style.RESET_ALL+"Enter your x")       
             x = int(input())
             while x > starting_x:
+                print('Your number is out of range. Please enter again')
                 x = int(input())
+    
             time.sleep(3)  # Give Player 1 a moment to read the input
             os.system('cls' if os.name == 'nt' else 'clear') 
 
@@ -92,7 +93,9 @@ def winner(x_win,y_win,starting_x,starting_y):
             print(Style.RESET_ALL+"Enter your y")
             y = int(input())
             while y > starting_y:
+                print('Your number is out of range. Please enter again ')
                 y = int(input())
+
             time.sleep(3)  # Give Player 1 a moment to read the input
             os.system('cls' if os.name == 'nt' else 'clear') 
 
@@ -108,6 +111,7 @@ def winner(x_win,y_win,starting_x,starting_y):
             print(Style.RESET_ALL+"Enter your y")
             y = int(input())
             while y > starting_y:
+                print('Your number is out of range. Please enter again ')
                 y = int(input())
             time.sleep(3)  # Give Player 1 a moment to read the input
             os.system('cls' if os.name == 'nt' else 'clear') 
@@ -129,6 +133,7 @@ def winner(x_win,y_win,starting_x,starting_y):
             print(Style.RESET_ALL+"Enter your x")
             x = int(input())
             while x > starting_x:
+                print('Your number is out of range. Please enter again ')
                 x = int(input())
             time.sleep(3)  # Give Player 1 a moment to read the input
             os.system('cls' if os.name == 'nt' else 'clear') 
